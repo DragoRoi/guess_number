@@ -22,9 +22,9 @@ def play_round():
         attempts += 1
         if guess < number:
             print('Ваше число меньше того, что загадано.')
-        if guess > number:
+        elif guess > number:
             print('Ваше число больше того, что загадано.')
-        if guess == number:
+        else:
             print(f'Вы угадали число! Количество попыток: {attempts}.')
             break
 
